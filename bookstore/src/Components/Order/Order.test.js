@@ -14,8 +14,8 @@ describe('Order tests: ', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('Order hello world', () => {
+  it('Snapshot matches', () => {
     const wrapper = shallow(<Order />);
-    expect(wrapper.find('h1').text()).toBe('Hello World');
+    expect(wrapper).toMatchSnapshot();
   })
 })

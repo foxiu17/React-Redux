@@ -14,8 +14,24 @@ describe('Header tests: ', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('Header hello world', () => {
+  it('Header - title changes', () => {
     const wrapper = shallow(<Header />);
-    expect(wrapper.find('h1').text()).toBe('Hello World');
+    expect(wrapper.find('h1').text()).toBe('Bad books');
+    wrapper.setState({
+      bookstoreName : 'Good books'
+    });
+    expect(wrapper.find('h1').text()).toBe('Good books');
+  });
+
+  it('Header - changes after click', () => {
+    const wrapper = shallow(<Header />);
+    expect(wrapper.state().bookstoreName).toBe('Bad books');
+    wrapper.find('.header').simulate('click');
+    expect(wrapper.state().bookstoreName).toBe('Good books');
+  });
+
+  it('Snapshot matches', () => {
+    const wrapper = shallow(<Header />);
+    expect(wrapper).toMatchSnapshot();
   })
 })

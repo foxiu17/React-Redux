@@ -21,6 +21,11 @@ describe('App tests: ', () => {
     expect(app.find('Order').exists()).toBe(true);
     expect(app.find('Inventory').exists()).toBe(true);
     expect(app.find('AdminPanel').exists()).toBe(true);
+  });
+
+  it('Snapshot matches', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper).toMatchSnapshot();
   })
 })
 
