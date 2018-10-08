@@ -43,24 +43,9 @@ class AdminPanel extends Component {
   addNewBook = (event) => {
     event.preventDefault();
 
-    let updateBooks = [...this.state.books];
-    let newBook = {...this.state.book};
-
-    updateBooks.push(newBook);
-    this.setState({
-      books: updateBooks,
-      book: {
-        name: "",
-        author: "",
-        description: "",
-        onStock: true,
-        image: ""
-      }
-    });
-
+    let updateBooks = [...this.state.book]
+    
   }
-
-
   render() {
     return (
       <div className="adminPanel col-md-4">

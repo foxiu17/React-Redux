@@ -14,58 +14,33 @@ class AdminPanel extends Component {
         description: "",
         onStock: true,
         image: ""
-      },
-      books: []
+      }
     }
   }
 
   handleChange = (event) => {
 
-    let newBook;
-
-    if(event.target.name === "onStock") {
-      newBook = {
+    if(event.target.name == "onStock") {
+      let newBook = {
         ...this.state.book,
-        [event.target.name]: event.target.checked
+        [event.target.name]:
       }
-    }else {
-      newBook = {
-        ...this.state.book,
-        [event.target.name]: event.target.value
-      }
+    }
+    let newBook = {
+      ...this.state.book,
+      [event.target.name]: event.target.value
     }
     this.setState({
       book: newBook
     });
+
     console.log(this.state.book);
   }
-
-  addNewBook = (event) => {
-    event.preventDefault();
-
-    let updateBooks = [...this.state.books];
-    let newBook = {...this.state.book};
-
-    updateBooks.push(newBook);
-    this.setState({
-      books: updateBooks,
-      book: {
-        name: "",
-        author: "",
-        description: "",
-        onStock: true,
-        image: ""
-      }
-    });
-
-  }
-
-
   render() {
     return (
       <div className="adminPanel col-md-4">
         <h1>Hello World</h1>
-        <form onSubmit={this.addNewBook}>
+        <form>
           <div className="form-group">
             <input type="text" placeholder="Book name" className="form-control" name="name" id="books_name" onChange={this.handleChange} value={this.state.book.name} />
           </div>

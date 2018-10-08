@@ -48,16 +48,8 @@ class AdminPanel extends Component {
 
     updateBooks.push(newBook);
     this.setState({
-      books: updateBooks,
-      book: {
-        name: "",
-        author: "",
-        description: "",
-        onStock: true,
-        image: ""
-      }
+      books: updateBooks
     });
-
   }
 
 
