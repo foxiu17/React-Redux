@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-
+import OrderItem from '../Order-item/Order-item';
 import './Order.css';
 
 class Order extends Component {
   render() {
+    const orderBooks = this.props.order.map( book => {
+      return <OrderItem book={book} />
+    })
     return (
       <div className="order col-md-4">
-        <h1>Hello World</h1>
+        <h1>Your order</h1>
+        {orderBooks}
       </div>
     );
   }

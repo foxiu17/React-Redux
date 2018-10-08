@@ -43,12 +43,11 @@ class AdminPanel extends Component {
   addNewBook = (event) => {
     event.preventDefault();
 
-    let updateBooks = [...this.state.books];
+    
     let newBook = {...this.state.book};
 
-    updateBooks.push(newBook);
+    this.props.handleAddBook(newBook);    
     this.setState({
-      books: updateBooks,
       book: {
         name: "",
         author: "",
@@ -64,7 +63,7 @@ class AdminPanel extends Component {
   render() {
     return (
       <div className="adminPanel col-md-4">
-        <h1>Hello World</h1>
+        <h1>Admin Panel</h1>
         <form onSubmit={this.addNewBook}>
           <div className="form-group">
             <input type="text" placeholder="Book name" className="form-control" name="name" id="books_name" onChange={this.handleChange} value={this.state.book.name} />
