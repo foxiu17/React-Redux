@@ -37,15 +37,12 @@ class App extends Component {
   }
 
   removeFromOrder = (title) => {
+    console.log("I'm removing this order");
+    console.log(title);
     const updateOrder = [...this.state.order];
-    updateOrder.filter( book => title !== book.name);
     this.setState({
-      order: updateOrder
+      order: updateOrder.filter( book => title !== book.name)
     });
-
-    // this.setState({
-    //   order: this.state.order.filter( book => title !== book.name)
-    // })
   }
 
   render() {
@@ -55,6 +52,7 @@ class App extends Component {
         <div className="row">
           <Order 
             order={this.state.order}
+            remove={this.removeFromOrder}
           />
           <Inventory
             books={this.state.books}

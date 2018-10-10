@@ -1,0 +1,598 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inventory-item tests:  Snapshot matches 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InventoryItem
+    book={
+      Object {
+        "image": "./Images/Wilki.jpg",
+        "name": "Book title",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="img-box row"
+        >
+          <div
+            className="col"
+          >
+            <center>
+              <img
+                alt="Book title"
+                className="book-img"
+                src="./Images/Wilki.jpg"
+              />
+            </center>
+          </div>
+          <button
+            className="btn btn-success order-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            Order
+          </button>
+        </div>,
+        <div
+          className="title-author-box row"
+        >
+          <div
+            className="col"
+          >
+            Book title: 
+            Book title
+          </div>
+          <div
+            className="col"
+          >
+            Author: 
+          </div>
+        </div>,
+        <div
+          className="row"
+        >
+          <div
+            className="col"
+          >
+            Book on stock: 
+            undefined
+          </div>
+          <div
+            className="col"
+          >
+            Description: 
+          </div>
+        </div>,
+      ],
+      "className": "inventory-item",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col"
+            >
+              <center>
+                <img
+                  alt="Book title"
+                  className="book-img"
+                  src="./Images/Wilki.jpg"
+                />
+              </center>
+            </div>,
+            <button
+              className="btn btn-success order-btn"
+              onClick={[Function]}
+              type="button"
+            >
+              Order
+            </button>,
+          ],
+          "className": "img-box row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <center>
+                <img
+                  alt="Book title"
+                  className="book-img"
+                  src="./Images/Wilki.jpg"
+                />
+              </center>,
+              "className": "col",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="Book title"
+                  className="book-img"
+                  src="./Images/Wilki.jpg"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Book title",
+                  "className": "book-img",
+                  "src": "./Images/Wilki.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "center",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Order",
+              "className": "btn btn-success order-btn",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": "Order",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col"
+            >
+              Book title: 
+              Book title
+            </div>,
+            <div
+              className="col"
+            >
+              Author: 
+            </div>,
+          ],
+          "className": "title-author-box row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Book title: ",
+                "Book title",
+              ],
+              "className": "col",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Book title: ",
+              "Book title",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Author: ",
+                undefined,
+              ],
+              "className": "col",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Author: ",
+              undefined,
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col"
+            >
+              Book on stock: 
+              undefined
+            </div>,
+            <div
+              className="col"
+            >
+              Description: 
+            </div>,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Book on stock: ",
+                "undefined",
+              ],
+              "className": "col",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Book on stock: ",
+              "undefined",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Description: ",
+                undefined,
+              ],
+              "className": "col",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Description: ",
+              undefined,
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="img-box row"
+          >
+            <div
+              className="col"
+            >
+              <center>
+                <img
+                  alt="Book title"
+                  className="book-img"
+                  src="./Images/Wilki.jpg"
+                />
+              </center>
+            </div>
+            <button
+              className="btn btn-success order-btn"
+              onClick={[Function]}
+              type="button"
+            >
+              Order
+            </button>
+          </div>,
+          <div
+            className="title-author-box row"
+          >
+            <div
+              className="col"
+            >
+              Book title: 
+              Book title
+            </div>
+            <div
+              className="col"
+            >
+              Author: 
+            </div>
+          </div>,
+          <div
+            className="row"
+          >
+            <div
+              className="col"
+            >
+              Book on stock: 
+              undefined
+            </div>
+            <div
+              className="col"
+            >
+              Description: 
+            </div>
+          </div>,
+        ],
+        "className": "inventory-item",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col"
+              >
+                <center>
+                  <img
+                    alt="Book title"
+                    className="book-img"
+                    src="./Images/Wilki.jpg"
+                  />
+                </center>
+              </div>,
+              <button
+                className="btn btn-success order-btn"
+                onClick={[Function]}
+                type="button"
+              >
+                Order
+              </button>,
+            ],
+            "className": "img-box row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <center>
+                  <img
+                    alt="Book title"
+                    className="book-img"
+                    src="./Images/Wilki.jpg"
+                  />
+                </center>,
+                "className": "col",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="Book title"
+                    className="book-img"
+                    src="./Images/Wilki.jpg"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Book title",
+                    "className": "book-img",
+                    "src": "./Images/Wilki.jpg",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "center",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Order",
+                "className": "btn btn-success order-btn",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Order",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col"
+              >
+                Book title: 
+                Book title
+              </div>,
+              <div
+                className="col"
+              >
+                Author: 
+              </div>,
+            ],
+            "className": "title-author-box row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Book title: ",
+                  "Book title",
+                ],
+                "className": "col",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Book title: ",
+                "Book title",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Author: ",
+                  undefined,
+                ],
+                "className": "col",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Author: ",
+                undefined,
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col"
+              >
+                Book on stock: 
+                undefined
+              </div>,
+              <div
+                className="col"
+              >
+                Description: 
+              </div>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Book on stock: ",
+                  "undefined",
+                ],
+                "className": "col",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Book on stock: ",
+                "undefined",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Description: ",
+                  undefined,
+                ],
+                "className": "col",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Description: ",
+                undefined,
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

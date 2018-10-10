@@ -22,9 +22,17 @@ ShallowWrapper {
         <div
           className="row"
         >
-          <Order />
-          <Inventory />
-          <AdminPanel />
+          <Order
+            order={Array []}
+            remove={[Function]}
+          />
+          <Inventory
+            addToOrder={[Function]}
+            books={Array []}
+          />
+          <AdminPanel
+            handleAddBook={[Function]}
+          />
         </div>,
       ],
       "className": "app container",
@@ -46,9 +54,17 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Order />,
-            <Inventory />,
-            <AdminPanel />,
+            <Order
+              order={Array []}
+              remove={[Function]}
+            />,
+            <Inventory
+              addToOrder={[Function]}
+              books={Array []}
+            />,
+            <AdminPanel
+              handleAddBook={[Function]}
+            />,
           ],
           "className": "row",
         },
@@ -58,7 +74,10 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {},
+            "props": Object {
+              "order": Array [],
+              "remove": [Function],
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -67,7 +86,10 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {},
+            "props": Object {
+              "addToOrder": [Function],
+              "books": Array [],
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -76,7 +98,9 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {},
+            "props": Object {
+              "handleAddBook": [Function],
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -98,9 +122,17 @@ ShallowWrapper {
           <div
             className="row"
           >
-            <Order />
-            <Inventory />
-            <AdminPanel />
+            <Order
+              order={Array []}
+              remove={[Function]}
+            />
+            <Inventory
+              addToOrder={[Function]}
+              books={Array []}
+            />
+            <AdminPanel
+              handleAddBook={[Function]}
+            />
           </div>,
         ],
         "className": "app container",
@@ -122,9 +154,17 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Order />,
-              <Inventory />,
-              <AdminPanel />,
+              <Order
+                order={Array []}
+                remove={[Function]}
+              />,
+              <Inventory
+                addToOrder={[Function]}
+                books={Array []}
+              />,
+              <AdminPanel
+                handleAddBook={[Function]}
+              />,
             ],
             "className": "row",
           },
@@ -134,7 +174,10 @@ ShallowWrapper {
               "instance": null,
               "key": undefined,
               "nodeType": "class",
-              "props": Object {},
+              "props": Object {
+                "order": Array [],
+                "remove": [Function],
+              },
               "ref": null,
               "rendered": null,
               "type": [Function],
@@ -143,7 +186,10 @@ ShallowWrapper {
               "instance": null,
               "key": undefined,
               "nodeType": "class",
-              "props": Object {},
+              "props": Object {
+                "addToOrder": [Function],
+                "books": Array [],
+              },
               "ref": null,
               "rendered": null,
               "type": [Function],
@@ -152,7 +198,9 @@ ShallowWrapper {
               "instance": null,
               "key": undefined,
               "nodeType": "class",
-              "props": Object {},
+              "props": Object {
+                "handleAddBook": [Function],
+              },
               "ref": null,
               "rendered": null,
               "type": [Function],

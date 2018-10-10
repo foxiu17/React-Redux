@@ -8,14 +8,13 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
 describe('Inventory-item tests: ', () => {
-  it('Inventory-item renders without problems', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<InventoryItem />, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
 
   it('Snapshot matches', () => {
-    const wrapper = shallow(<InventoryItem />);
+    const book = {
+      name: "Book title",
+      image: './Images/Wilki.jpg'
+    }
+    const wrapper = shallow(<InventoryItem book={book}/>);
     expect(wrapper).toMatchSnapshot();
   });
 })
