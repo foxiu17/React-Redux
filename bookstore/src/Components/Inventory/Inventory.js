@@ -22,7 +22,7 @@ class Inventory extends Component {
   }
 
   componentWillUnmount() {
-    fbase.removeBinding(this.books);
+    fbase.removeBinding(this.booksRef);
   }
 
   render() {
@@ -30,9 +30,12 @@ class Inventory extends Component {
       return <InventoryItem book={book} addToOrder={this.props.addToOrder}/>
     });
     return (
-      <div className="inventory col-md-4">
+      <div className="inventory col-md-8">
         <h1>Book inventory</h1>
-        {bookList}
+        <div className="row justify-content-between inventory-box">
+          {bookList}
+        </div>
+        
       </div>
     );
   }

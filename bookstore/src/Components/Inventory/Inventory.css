@@ -1,4 +1,8 @@
 .inventory {
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
   font-size: 12px;
+}
+
+.inventory-box {
+  padding: 0 20px;
 }

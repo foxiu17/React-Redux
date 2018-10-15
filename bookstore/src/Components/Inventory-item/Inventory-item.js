@@ -8,20 +8,21 @@ class InventoryItem extends Component {
   }
   render() {
     return (
-      <div className="inventory-item">
-        <div className="img-box row">
-          <div className="col">
-            <center><img src={this.props.book.image} alt={this.props.book.name} className="book-img"/></center>
+      <div className="inventory-item col-md-12">
+        <div className="inventory-item-box row">
+          <div className="col-md-2">
+            <center><img src={this.props.book.image} alt={this.props.book.name} className="book-img" /></center>
           </div>
           <button type="button" onClick={this.handleSendBook} className="btn btn-success order-btn">Order</button>
-        </div>
-        <div className="title-author-box row">
-          <div className="col">Book title: {this.props.book.name}</div>
-          <div className="col">Author: {this.props.book.author}</div>
-        </div>
-        <div className="row">
-          <div className="col">Book on stock: {String(this.props.book.onStock)}</div>
-          <div className="col">Description: {this.props.book.description}</div>
+          <div className="col-md-4">
+            <div><span>Book title: </span>{this.props.book.name}</div>
+            <div><span>Author: </span>{this.props.book.author}</div>
+            <div><span>Book on stock: </span>{String(this.props.book.onStock)}</div>
+          </div>
+          <div className="col-md-4">
+            <div><span>Description: </span><br />{this.props.book.description}</div>
+          </div>
+
         </div>
 
       </div>

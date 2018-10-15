@@ -1,15 +1,17 @@
 .inventory-item {
   padding: 10px 20px;
   margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 189, 89);
   background-color: bisque;
 }
 
-.img-box {
+.inventory-item-box {
   position: relative;
 }
 .col {
   padding: 10px 20px;
-  border: 1px solid black;
+  border-bottom: 1px solid rgb(255, 189, 89);
 }
 
 .book-img {
@@ -23,4 +25,8 @@
   padding: 3px 7px;
   transform: translateY(50%);
   font-size: 12px;
+}
+
+span {
+  font-weight: bold;
 }

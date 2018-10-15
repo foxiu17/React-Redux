@@ -1,4 +1,9 @@
 .header {
-  background-color: darkblue;
+  width: 100%;
+  background-color: rgb(99, 71, 30);
   color: aliceblue;
+}
+
+.btn-goAdmin {
+  margin-right: 15px;
 }

@@ -8,26 +8,26 @@ class Header extends Component {
     super(props);
 
     this.state = {
-      bookstoreName: "Bad books",
+      bookstoreName: "Good bookstore",
       clicked: true,
-      textColor: "red",
-      backgroundColor: "black"
+      textColor: "black",
+      backgroundColor: "rgb(99, 71, 30)"
     }
   }
 
   handleClick = () => {
     if (this.state.clicked) {
       this.setState({
-        bookstoreName: "Good books",
+        bookstoreName: "Good bookstore clicked",
         textColor: "white",
         backgroundColor: "cyan",
         clicked: !this.state.clicked
       });
     } else {
       this.setState({
-        textColor: "red",
-        backgroundColor: "black",
-        bookstoreName: "Bad books",
+        textColor: "black",
+        backgroundColor: "rgb(99, 71, 30)",
+        bookstoreName: "Good bookstore",
       });
     }
     this.setState({
@@ -45,7 +45,9 @@ class Header extends Component {
     return (
       <div className="header" onClick={this.handleClick} style={headerCss}>
         <center><h1>{this.state.bookstoreName}</h1></center>
-        <Link to="/admin" >Go to admin panel</Link>
+        <div className="row justify-content-end">
+          <Link to="/admin" ><button className="btn btn-info btn-goAdmin">Administrator Panel</button></Link>
+        </div>
       </div>
     );
   }
