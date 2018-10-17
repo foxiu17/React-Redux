@@ -26,9 +26,15 @@ class Inventory extends Component {
   }
 
   render() {
-    const bookList = this.state.books.map( book => {
-      return <InventoryItem book={book} addToOrder={this.props.addToOrder}/>
-    });
+    let bookList = [];
+    if (Array.isArray(this.state.books)) {
+      bookList = this.state.books.map( book => {
+        return <InventoryItem key={book.name} book={book} addToOrder={this.props.addToOrder}/>
+      });
+    }else {
+      bookList = "EMPTY";
+    }
+    
     return (
       <div className="inventory col-md-8">
         <h1>Book inventory</h1>
