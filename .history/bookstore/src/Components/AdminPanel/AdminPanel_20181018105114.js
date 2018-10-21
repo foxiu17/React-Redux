@@ -56,7 +56,7 @@ class AdminPanel extends Component {
         {this.state.loggedIn &&
           <React.Fragment>
             <AddBookForm />
-            <LogOut handleLoggedOut={this.logIn}/>
+            <LogOut handleLoggedOut={/>
           </React.Fragment>
         }
 

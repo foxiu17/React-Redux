@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+// import ReactDOM from 'react-dom';
 import Header from './Components/Header/Header';
 import Order from './Components/Order/Order';
 import Inventory from './Components/Inventory/Inventory';
-import Footer from './Components/Footer/Footer';
+
+
 import './App.css';
 
 class App extends Component {
@@ -15,6 +17,7 @@ class App extends Component {
     }
   }
 
+  
   addToOrder = (book) => {
     const updateOrder = [...this.state.order];
     updateOrder.push(book);
@@ -45,7 +48,6 @@ class App extends Component {
             addToOrder={this.addToOrder}
           />
         </div>
-        <Footer />
       </div>
     );
   }

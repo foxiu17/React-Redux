@@ -3,7 +3,7 @@ import { fbase } from '../../fbase';
 import LoginForm from '../LoginForm/LoginForm';
 import './AdminPanel.css';
 import AddBookForm from '../AddBookForm/AddBookForm';
-import LogOut from '../LogOut/LogOut';
+import 
 
 class AdminPanel extends Component {
 
@@ -56,7 +56,7 @@ class AdminPanel extends Component {
         {this.state.loggedIn &&
           <React.Fragment>
             <AddBookForm />
-            <LogOut handleLoggedOut={this.logIn}/>
+            <LogOut />
           </React.Fragment>
         }
 
