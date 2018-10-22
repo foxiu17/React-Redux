@@ -17,14 +17,13 @@ class InventoryItem extends Component {
           <div className="col-md-4">
             <div><span>Book title: </span>{this.props.book.name}</div>
             <div><span>Author: </span>{this.props.book.author}</div>
+            <div><span>Genre: </span>{this.props.book.genre}</div>
             <div><span>Book on stock: </span>{String(this.props.book.onStock)}</div>
           </div>
           <div className="col-md-4">
             <div><span>Description: </span><br />{this.props.book.description}</div>
           </div>
-
         </div>
-
       </div>
     );
   }

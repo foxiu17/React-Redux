@@ -25,6 +25,11 @@ class LoginForm extends Component {
       .catch(() => {
         alert("Incorrect email or password");
       })
+
+      this.setState({
+        email: "",
+        passw: ""
+      })
   }
 
   handleLoginChange = (event) => {

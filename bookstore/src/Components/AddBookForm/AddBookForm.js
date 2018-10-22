@@ -11,15 +11,32 @@ class AddBookForm extends Component {
       book: {
         name: "",
         author: "",
+        genre: "",
         description: "",
         onStock: true,
         image: ""
       },
+      genre: ["Select...", "Crime", "Science", "Science-fiction", "Adventure", "Biography", "Horror", "Novel", "Fantasy", "Scientific"]
     }
   }
 
   addNewBook = (event) => {
     event.preventDefault();
+    // let imgPlaceholder;
+
+    // if (this.state.book.image === "") {
+    //   console.log("kESTEKE,KJJJ");
+    //   imgPlaceholder = {
+    //     ...this.state.book,
+    //     image: "https://via.placeholder.com/350x150"
+    //   }
+    //   this.setState({
+    //     book: imgPlaceholder
+    //   });
+    // }else {
+    //   console.log("ajaaaa");
+    // }
+
     let newBook = { ...this.state.book };
 
     if (Array.isArray(this.state.books)) {
@@ -75,8 +92,12 @@ class AddBookForm extends Component {
 
   render() {
 
+    const selectValues = this.state.genre.map((value, index) => {
+      return <option key={index} value={value}>{value}</option>
+    })
+
     return (
-      <div className="adminPanel col-md-4 offset-md-4">
+      <div className="adminPanel col-md-4">
         <h1>Admin Panel</h1>
         <form onSubmit={this.addNewBook}>
           <div className="form-group">
@@ -84,6 +105,14 @@ class AddBookForm extends Component {
           </div>
           <div className="form-group">
             <input type="text" placeholder="Book author" className="form-control" name="author" id="books_author" onChange={this.handleChange} value={this.state.book.author} />
+          </div>
+          <div className="input-group mb-3">
+            <div className="input-group-prepend">
+              <label className="input-group-text" htmlFor="inputGroupSelect01">Genre</label>
+            </div>
+            <select className="custom-select" id="inputGroupSelect01" onChange={this.handleChange} name="genre">
+              {selectValues}
+            </select>
           </div>
           <div className="form-group">
             <textarea placeholder="Book description" className="form-control" name="description" id="books_desc" onChange={this.handleChange} value={this.state.book.description} />

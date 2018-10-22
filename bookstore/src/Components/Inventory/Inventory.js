@@ -10,7 +10,8 @@ class Inventory extends Component {
     super();
 
     this.state = {
-      books: []
+      books: [],
+      
     }
   }
 
@@ -32,7 +33,7 @@ class Inventory extends Component {
         return <InventoryItem key={book.name} book={book} addToOrder={this.props.addToOrder}/>
       });
     }else {
-      bookList = "EMPTY";
+      bookList = "";
     }
     
     return (
