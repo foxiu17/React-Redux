@@ -7,6 +7,10 @@ class AdminPanelBooksList extends Component {
     this.props.remove(this.props.book.name);
   }
 
+  handleEditClick = () => {
+    this.props.edit(this.props.book);
+  }
+
 
   render() {
     return (
@@ -25,7 +29,7 @@ class AdminPanelBooksList extends Component {
         </div>
         <div className="col-md-2">
           <div className="row">
-            <button className="btn btn-primary">Edit</button>
+            <button className="btn btn-primary" onClick={this.handleEditClick}>Edit</button>
             <button className="btn btn-danger" onClick={this.handleClick}>Delete</button>
           </div>
 

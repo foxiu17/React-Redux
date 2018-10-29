@@ -15,12 +15,24 @@ class AdminPanel extends Component {
       book: {
         name: "",
         author: "",
+        genre: "",
         description: "",
         onStock: true,
         image: ""
       },
+      bookToEdit: {},
       loggedIn: false,
+      editMode: false,
     };
+  }
+
+  addNewBook = (book) => {
+    this.setState({
+      books: [...this.state.books, book],
+      editMode: false,
+      bookToEdit: {},
+      book: {}
+    })
   }
 
   logIn = (logged) => {
@@ -29,13 +41,29 @@ class AdminPanel extends Component {
     });
   }
 
-  removeBook = (index) => {
-    console.log(index);
-    const updateBooks = this.state.books.filter( book => index !== book.name);
+  removeBook = (name) => {
+    const updateBooks = this.state.books.filter( book => name !== book.name);
     this.setState({
       books: updateBooks
     });
-    // this.booksList = updateBooks;
+  }
+
+  editModeOn = (book) => {
+    this.setState({
+      editMode: true,
+      bookToEdit: book
+    });
+  }
+
+  editBook = (oldTitle, bookAfterEdit) => {
+    const newBooks = this.state.books.filter( book => oldTitle !== book.name);
+    
+    this.setState({
+      books: [...newBooks, bookAfterEdit],
+      editMode: false,
+      bookToEdit: {},
+      book: {}
+    })
   }
 
   componentDidMount() {
@@ -58,7 +86,7 @@ class AdminPanel extends Component {
     let booksList = [];
     if (Array.isArray(this.state.books)) {
       booksList = this.state.books.map( (book, index) => {
-        return <AdminPanelBooksList key={index} book={book} remove={this.removeBook}/>
+        return <AdminPanelBooksList key={index} book={book} remove={this.removeBook} edit={this.editModeOn}/>
       });
     }else {
       booksList = "";
@@ -74,7 +102,12 @@ class AdminPanel extends Component {
         {this.state.loggedIn &&
           <React.Fragment>
             <div className="row">
-              <AddBookForm />
+              <AddBookForm
+                addNewBook={this.addNewBook}
+                book={this.state.bookToEdit}
+                editMode={this.state.editMode}
+                editBook={this.editBook}
+              />
               <div className="admin__booksList col-md-7">
                 <h2>Admin Panel- Book inventory</h2>
                 {booksList}
