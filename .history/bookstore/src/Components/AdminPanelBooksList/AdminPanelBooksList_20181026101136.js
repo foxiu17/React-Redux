@@ -3,10 +3,6 @@ import "./AdminPanelBooksList.css";
 
 class AdminPanelBooksList extends Component {
 
-  handleClick = (event) => {
-    this.props.remove(this.props.book.name);
-  }
-
 
   render() {
     return (

@@ -3,12 +3,13 @@ import "./AdminPanelBooksList.css";
 
 class AdminPanelBooksList extends Component {
 
-  handleClick = (event) => {
-    this.props.remove(this.props.book.name);
+  handleClick = () => {
+    this.props.remove(this.props.key);
   }
 
 
   render() {
+    
     return (
       <div className="Admin__book-item row">
         <div className="col-md-2 Admin__img-box">

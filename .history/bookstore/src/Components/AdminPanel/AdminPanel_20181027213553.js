@@ -30,11 +30,7 @@ class AdminPanel extends Component {
   }
 
   removeBook = (index) => {
-    console.log(index);
-    const updateBooks = this.state.books.filter( book => index !== book.name);
-    this.setState({
-      books: updateBooks
-    });
+    // const updateBooks = this.booksList.filter( book => index !== book.key);
     // this.booksList = updateBooks;
   }
 
