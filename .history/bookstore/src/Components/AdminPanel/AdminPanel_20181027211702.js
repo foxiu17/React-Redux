@@ -30,12 +30,8 @@ class AdminPanel extends Component {
   }
 
   removeBook = (index) => {
-    console.log(index);
-    const updateBooks = this.state.books.filter( book => index !== book.name);
-    this.setState({
-      books: updateBooks
-    });
-    // this.booksList = updateBooks;
+    const updateBooks = this.booksList.filter( book => index !== book.key);
+    this.booksList = updateBooks;
   }
 
   componentDidMount() {
@@ -55,14 +51,14 @@ class AdminPanel extends Component {
   }
 
   render() {
-    let booksList = [];
-    if (Array.isArray(this.state.books)) {
-      booksList = this.state.books.map( (book, index) => {
-        return <AdminPanelBooksList key={index} book={book} remove={this.removeBook}/>
-      });
-    }else {
-      booksList = "";
-    }
+    // let booksList = [];
+    // if (Array.isArray(this.state.books)) {
+    //   booksList = this.state.books.map( (book, index) => {
+    //     return <AdminPanelBooksList key={index} book={book} remove={this.removeBook}/>
+    //   });
+    // }else {
+    //   booksList = "";
+    // }
 
     return (
       <div>
@@ -77,7 +73,7 @@ class AdminPanel extends Component {
               <AddBookForm />
               <div className="admin__booksList col-md-7">
                 <h2>Admin Panel- Book inventory</h2>
-                {booksList}
+                <AdminPanelBooksList books={/>
               </div>
             </div>
             <LogOut handleLoggedOut={this.logIn} />

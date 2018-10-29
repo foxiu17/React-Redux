@@ -33,8 +33,8 @@ class AdminPanel extends Component {
     console.log(index);
     const updateBooks = this.state.books.filter( book => index !== book.name);
     this.setState({
-      books: updateBooks
-    });
+      books: 
+    })
     // this.booksList = updateBooks;
   }
 

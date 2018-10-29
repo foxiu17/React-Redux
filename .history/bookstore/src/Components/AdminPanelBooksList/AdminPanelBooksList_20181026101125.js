@@ -3,10 +3,6 @@ import "./AdminPanelBooksList.css";
 
 class AdminPanelBooksList extends Component {
 
-  handleClick = (event) => {
-    this.props.remove(this.props.book.name);
-  }
-
 
   render() {
     return (
@@ -26,7 +22,7 @@ class AdminPanelBooksList extends Component {
         <div className="col-md-2">
           <div className="row">
             <button className="btn btn-primary">Edit</button>
-            <button className="btn btn-danger" onClick={this.handleClick}>Delete</button>
+            <button className="btn btn-danger" c>Delete</button>
           </div>
 
         </div>

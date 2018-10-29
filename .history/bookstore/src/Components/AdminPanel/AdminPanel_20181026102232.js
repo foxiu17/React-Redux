@@ -29,15 +29,6 @@ class AdminPanel extends Component {
     });
   }
 
-  removeBook = (index) => {
-    console.log(index);
-    const updateBooks = this.state.books.filter( book => index !== book.name);
-    this.setState({
-      books: updateBooks
-    });
-    // this.booksList = updateBooks;
-  }
-
   componentDidMount() {
     if (localStorage.getItem("loggedIn")) {
       this.setState({
@@ -58,7 +49,7 @@ class AdminPanel extends Component {
     let booksList = [];
     if (Array.isArray(this.state.books)) {
       booksList = this.state.books.map( (book, index) => {
-        return <AdminPanelBooksList key={index} book={book} remove={this.removeBook}/>
+        return <AdminPanelBooksList key={index} book={book} remove={this.remove}/>
       });
     }else {
       booksList = "";
