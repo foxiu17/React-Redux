@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Inventory-item.css';
+import './Inventory-item.sass';
 
 class InventoryItem extends Component {
 

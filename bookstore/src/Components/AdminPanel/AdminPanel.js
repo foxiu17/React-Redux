@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { fbase } from '../../fbase';
 import LoginForm from '../LoginForm/LoginForm';
-import './AdminPanel.css';
+import './AdminPanel.sass';
 import AddBookForm from '../AddBookForm/AddBookForm';
 import LogOut from '../LogOut/LogOut';
 import AdminPanelBooksList from '../AdminPanelBooksList/AdminPanelBooksList';

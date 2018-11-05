@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./AdminPanelBooksList.css";
+import "./AdminPanelBooksList.sass";
 
 class AdminPanelBooksList extends Component {
 

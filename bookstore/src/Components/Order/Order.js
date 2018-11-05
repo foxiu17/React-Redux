@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import OrderItem from '../Order-item/Order-item';
-import './Order.css';
+import './Order.sass';
 
 class Order extends Component {
   render() {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { firebaseApp } from '../../fbase';
-import './LoginForm.css';
+import './LoginForm.sass';
 
 class LoginForm extends Component {
 

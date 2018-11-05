@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { fbase } from '../../fbase';
 import InventoryItem from '../Inventory-item/Inventory-item';
 
-import './Inventory.css';
+import './Inventory.sass';
 
 class Inventory extends Component {
 

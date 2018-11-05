@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { firebaseApp } from '../../fbase';
 
-import './LogOut.css';
+import './LogOut.sass';
 
 class LogOut extends Component {
   constructor() {
